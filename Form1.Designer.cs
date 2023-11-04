@@ -207,6 +207,23 @@
             numericUpDown31 = new NumericUpDown();
             numericUpDown32 = new NumericUpDown();
             button1 = new Button();
+            description = new Label();
+            pictureBox42 = new PictureBox();
+            pictureBox43 = new PictureBox();
+            pictureBox44 = new PictureBox();
+            pictureBox45 = new PictureBox();
+            label41 = new Label();
+            label42 = new Label();
+            label43 = new Label();
+            label44 = new Label();
+            checkBox33 = new CheckBox();
+            checkBox34 = new CheckBox();
+            checkBox35 = new CheckBox();
+            checkBox36 = new CheckBox();
+            numericUpDown33 = new NumericUpDown();
+            numericUpDown34 = new NumericUpDown();
+            numericUpDown35 = new NumericUpDown();
+            numericUpDown36 = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -296,6 +313,14 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown30).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown31).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown32).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox42).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox43).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox44).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox45).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown33).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown34).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown35).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown36).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -304,7 +329,7 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(-3, -6);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1482, 1408);
+            pictureBox1.Size = new Size(1283, 1246);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -880,16 +905,20 @@
             checkBox1.Text = "启用";
             checkBox1.UseVisualStyleBackColor = false;
             checkBox1.Visible = false;
+            checkBox1.CheckedChanged += checkBox_CheckedChanged;
             checkBox1.Paint += checkBox_Paint;
             // 
             // numericUpDown1
             // 
+            numericUpDown1.DecimalPlaces = 1;
+            numericUpDown1.ImeMode = ImeMode.Off;
             numericUpDown1.Location = new Point(498, 95);
             numericUpDown1.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(72, 30);
             numericUpDown1.TabIndex = 7;
             numericUpDown1.Visible = false;
+            numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // label9
             // 
@@ -951,16 +980,20 @@
             checkBox2.Text = "启用";
             checkBox2.UseVisualStyleBackColor = false;
             checkBox2.Visible = false;
+            checkBox2.CheckedChanged += checkBox_CheckedChanged;
             checkBox2.Paint += checkBox_Paint;
             // 
             // numericUpDown2
             // 
+            numericUpDown2.DecimalPlaces = 1;
+            numericUpDown2.ImeMode = ImeMode.Off;
             numericUpDown2.Location = new Point(726, 95);
             numericUpDown2.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown2.Name = "numericUpDown2";
             numericUpDown2.Size = new Size(72, 30);
             numericUpDown2.TabIndex = 7;
             numericUpDown2.Visible = false;
+            numericUpDown2.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // pictureBox12
             // 
@@ -998,16 +1031,20 @@
             checkBox3.Text = "启用";
             checkBox3.UseVisualStyleBackColor = false;
             checkBox3.Visible = false;
+            checkBox3.CheckedChanged += checkBox_CheckedChanged;
             checkBox3.Paint += checkBox_Paint;
             // 
             // numericUpDown3
             // 
+            numericUpDown3.DecimalPlaces = 1;
+            numericUpDown3.ImeMode = ImeMode.Off;
             numericUpDown3.Location = new Point(954, 95);
             numericUpDown3.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown3.Name = "numericUpDown3";
             numericUpDown3.Size = new Size(72, 30);
             numericUpDown3.TabIndex = 7;
             numericUpDown3.Visible = false;
+            numericUpDown3.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // pictureBox13
             // 
@@ -1045,16 +1082,20 @@
             checkBox4.Text = "启用";
             checkBox4.UseVisualStyleBackColor = false;
             checkBox4.Visible = false;
+            checkBox4.CheckedChanged += checkBox_CheckedChanged;
             checkBox4.Paint += checkBox_Paint;
             // 
             // numericUpDown4
             // 
+            numericUpDown4.DecimalPlaces = 1;
+            numericUpDown4.ImeMode = ImeMode.Off;
             numericUpDown4.Location = new Point(1182, 95);
             numericUpDown4.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown4.Name = "numericUpDown4";
             numericUpDown4.Size = new Size(72, 30);
             numericUpDown4.TabIndex = 7;
             numericUpDown4.Visible = false;
+            numericUpDown4.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // pictureBox14
             // 
@@ -1164,6 +1205,7 @@
             checkBox5.Text = "启用";
             checkBox5.UseVisualStyleBackColor = false;
             checkBox5.Visible = false;
+            checkBox5.CheckedChanged += checkBox_CheckedChanged;
             checkBox5.Paint += checkBox_Paint;
             // 
             // checkBox6
@@ -1178,6 +1220,7 @@
             checkBox6.Text = "启用";
             checkBox6.UseVisualStyleBackColor = false;
             checkBox6.Visible = false;
+            checkBox6.CheckedChanged += checkBox_CheckedChanged;
             checkBox6.Paint += checkBox_Paint;
             // 
             // checkBox7
@@ -1192,6 +1235,7 @@
             checkBox7.Text = "启用";
             checkBox7.UseVisualStyleBackColor = false;
             checkBox7.Visible = false;
+            checkBox7.CheckedChanged += checkBox_CheckedChanged;
             checkBox7.Paint += checkBox_Paint;
             // 
             // checkBox8
@@ -1206,43 +1250,56 @@
             checkBox8.Text = "启用";
             checkBox8.UseVisualStyleBackColor = false;
             checkBox8.Visible = false;
+            checkBox8.CheckedChanged += checkBox_CheckedChanged;
             checkBox8.Paint += checkBox_Paint;
             // 
             // numericUpDown5
             // 
+            numericUpDown5.DecimalPlaces = 1;
+            numericUpDown5.ImeMode = ImeMode.Off;
             numericUpDown5.Location = new Point(498, 211);
             numericUpDown5.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown5.Name = "numericUpDown5";
             numericUpDown5.Size = new Size(72, 30);
             numericUpDown5.TabIndex = 7;
             numericUpDown5.Visible = false;
+            numericUpDown5.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown6
             // 
+            numericUpDown6.DecimalPlaces = 1;
+            numericUpDown6.ImeMode = ImeMode.Off;
             numericUpDown6.Location = new Point(726, 211);
             numericUpDown6.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown6.Name = "numericUpDown6";
             numericUpDown6.Size = new Size(72, 30);
             numericUpDown6.TabIndex = 7;
             numericUpDown6.Visible = false;
+            numericUpDown6.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown7
             // 
+            numericUpDown7.DecimalPlaces = 1;
+            numericUpDown7.ImeMode = ImeMode.Off;
             numericUpDown7.Location = new Point(954, 211);
             numericUpDown7.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown7.Name = "numericUpDown7";
             numericUpDown7.Size = new Size(72, 30);
             numericUpDown7.TabIndex = 7;
             numericUpDown7.Visible = false;
+            numericUpDown7.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown8
             // 
+            numericUpDown8.DecimalPlaces = 1;
+            numericUpDown8.ImeMode = ImeMode.Off;
             numericUpDown8.Location = new Point(1182, 211);
             numericUpDown8.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown8.Name = "numericUpDown8";
             numericUpDown8.Size = new Size(72, 30);
             numericUpDown8.TabIndex = 7;
             numericUpDown8.Visible = false;
+            numericUpDown8.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // pictureBox18
             // 
@@ -1352,6 +1409,7 @@
             checkBox9.Text = "启用";
             checkBox9.UseVisualStyleBackColor = false;
             checkBox9.Visible = false;
+            checkBox9.CheckedChanged += checkBox_CheckedChanged;
             checkBox9.Paint += checkBox_Paint;
             // 
             // checkBox10
@@ -1366,6 +1424,7 @@
             checkBox10.Text = "启用";
             checkBox10.UseVisualStyleBackColor = false;
             checkBox10.Visible = false;
+            checkBox10.CheckedChanged += checkBox_CheckedChanged;
             checkBox10.Paint += checkBox_Paint;
             // 
             // checkBox11
@@ -1380,6 +1439,7 @@
             checkBox11.Text = "启用";
             checkBox11.UseVisualStyleBackColor = false;
             checkBox11.Visible = false;
+            checkBox11.CheckedChanged += checkBox_CheckedChanged;
             checkBox11.Paint += checkBox_Paint;
             // 
             // checkBox12
@@ -1394,43 +1454,56 @@
             checkBox12.Text = "启用";
             checkBox12.UseVisualStyleBackColor = false;
             checkBox12.Visible = false;
+            checkBox12.CheckedChanged += checkBox_CheckedChanged;
             checkBox12.Paint += checkBox_Paint;
             // 
             // numericUpDown9
             // 
+            numericUpDown9.DecimalPlaces = 1;
+            numericUpDown9.ImeMode = ImeMode.Off;
             numericUpDown9.Location = new Point(498, 327);
             numericUpDown9.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown9.Name = "numericUpDown9";
             numericUpDown9.Size = new Size(72, 30);
             numericUpDown9.TabIndex = 7;
             numericUpDown9.Visible = false;
+            numericUpDown9.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown10
             // 
+            numericUpDown10.DecimalPlaces = 1;
+            numericUpDown10.ImeMode = ImeMode.Off;
             numericUpDown10.Location = new Point(726, 327);
             numericUpDown10.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown10.Name = "numericUpDown10";
             numericUpDown10.Size = new Size(72, 30);
             numericUpDown10.TabIndex = 7;
             numericUpDown10.Visible = false;
+            numericUpDown10.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown11
             // 
+            numericUpDown11.DecimalPlaces = 1;
+            numericUpDown11.ImeMode = ImeMode.Off;
             numericUpDown11.Location = new Point(954, 327);
             numericUpDown11.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown11.Name = "numericUpDown11";
             numericUpDown11.Size = new Size(72, 30);
             numericUpDown11.TabIndex = 7;
             numericUpDown11.Visible = false;
+            numericUpDown11.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown12
             // 
+            numericUpDown12.DecimalPlaces = 1;
+            numericUpDown12.ImeMode = ImeMode.Off;
             numericUpDown12.Location = new Point(1182, 327);
             numericUpDown12.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown12.Name = "numericUpDown12";
             numericUpDown12.Size = new Size(72, 30);
             numericUpDown12.TabIndex = 7;
             numericUpDown12.Visible = false;
+            numericUpDown12.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // pictureBox22
             // 
@@ -1540,6 +1613,7 @@
             checkBox13.Text = "启用";
             checkBox13.UseVisualStyleBackColor = false;
             checkBox13.Visible = false;
+            checkBox13.CheckedChanged += checkBox_CheckedChanged;
             checkBox13.Paint += checkBox_Paint;
             // 
             // checkBox14
@@ -1554,6 +1628,7 @@
             checkBox14.Text = "启用";
             checkBox14.UseVisualStyleBackColor = false;
             checkBox14.Visible = false;
+            checkBox14.CheckedChanged += checkBox_CheckedChanged;
             checkBox14.Paint += checkBox_Paint;
             // 
             // checkBox15
@@ -1568,6 +1643,7 @@
             checkBox15.Text = "启用";
             checkBox15.UseVisualStyleBackColor = false;
             checkBox15.Visible = false;
+            checkBox15.CheckedChanged += checkBox_CheckedChanged;
             checkBox15.Paint += checkBox_Paint;
             // 
             // checkBox16
@@ -1582,43 +1658,56 @@
             checkBox16.Text = "启用";
             checkBox16.UseVisualStyleBackColor = false;
             checkBox16.Visible = false;
+            checkBox16.CheckedChanged += checkBox_CheckedChanged;
             checkBox16.Paint += checkBox_Paint;
             // 
             // numericUpDown13
             // 
+            numericUpDown13.DecimalPlaces = 1;
+            numericUpDown13.ImeMode = ImeMode.Off;
             numericUpDown13.Location = new Point(498, 443);
             numericUpDown13.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown13.Name = "numericUpDown13";
             numericUpDown13.Size = new Size(72, 30);
             numericUpDown13.TabIndex = 7;
             numericUpDown13.Visible = false;
+            numericUpDown13.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown14
             // 
+            numericUpDown14.DecimalPlaces = 1;
+            numericUpDown14.ImeMode = ImeMode.Off;
             numericUpDown14.Location = new Point(726, 443);
             numericUpDown14.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown14.Name = "numericUpDown14";
             numericUpDown14.Size = new Size(72, 30);
             numericUpDown14.TabIndex = 7;
             numericUpDown14.Visible = false;
+            numericUpDown14.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown15
             // 
+            numericUpDown15.DecimalPlaces = 1;
+            numericUpDown15.ImeMode = ImeMode.Off;
             numericUpDown15.Location = new Point(954, 443);
             numericUpDown15.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown15.Name = "numericUpDown15";
             numericUpDown15.Size = new Size(72, 30);
             numericUpDown15.TabIndex = 7;
             numericUpDown15.Visible = false;
+            numericUpDown15.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown16
             // 
+            numericUpDown16.DecimalPlaces = 1;
+            numericUpDown16.ImeMode = ImeMode.Off;
             numericUpDown16.Location = new Point(1182, 443);
             numericUpDown16.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown16.Name = "numericUpDown16";
             numericUpDown16.Size = new Size(72, 30);
             numericUpDown16.TabIndex = 7;
             numericUpDown16.Visible = false;
+            numericUpDown16.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // pictureBox26
             // 
@@ -1728,6 +1817,7 @@
             checkBox17.Text = "启用";
             checkBox17.UseVisualStyleBackColor = false;
             checkBox17.Visible = false;
+            checkBox17.CheckedChanged += checkBox_CheckedChanged;
             checkBox17.Paint += checkBox_Paint;
             // 
             // checkBox18
@@ -1742,6 +1832,7 @@
             checkBox18.Text = "启用";
             checkBox18.UseVisualStyleBackColor = false;
             checkBox18.Visible = false;
+            checkBox18.CheckedChanged += checkBox_CheckedChanged;
             checkBox18.Paint += checkBox_Paint;
             // 
             // checkBox19
@@ -1756,6 +1847,7 @@
             checkBox19.Text = "启用";
             checkBox19.UseVisualStyleBackColor = false;
             checkBox19.Visible = false;
+            checkBox19.CheckedChanged += checkBox_CheckedChanged;
             checkBox19.Paint += checkBox_Paint;
             // 
             // checkBox20
@@ -1770,43 +1862,56 @@
             checkBox20.Text = "启用";
             checkBox20.UseVisualStyleBackColor = false;
             checkBox20.Visible = false;
+            checkBox20.CheckedChanged += checkBox_CheckedChanged;
             checkBox20.Paint += checkBox_Paint;
             // 
             // numericUpDown17
             // 
+            numericUpDown17.DecimalPlaces = 1;
+            numericUpDown17.ImeMode = ImeMode.Off;
             numericUpDown17.Location = new Point(498, 559);
             numericUpDown17.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown17.Name = "numericUpDown17";
             numericUpDown17.Size = new Size(72, 30);
             numericUpDown17.TabIndex = 7;
             numericUpDown17.Visible = false;
+            numericUpDown17.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown18
             // 
+            numericUpDown18.DecimalPlaces = 1;
+            numericUpDown18.ImeMode = ImeMode.Off;
             numericUpDown18.Location = new Point(726, 559);
             numericUpDown18.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown18.Name = "numericUpDown18";
             numericUpDown18.Size = new Size(72, 30);
             numericUpDown18.TabIndex = 7;
             numericUpDown18.Visible = false;
+            numericUpDown18.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown19
             // 
+            numericUpDown19.DecimalPlaces = 1;
+            numericUpDown19.ImeMode = ImeMode.Off;
             numericUpDown19.Location = new Point(954, 559);
             numericUpDown19.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown19.Name = "numericUpDown19";
             numericUpDown19.Size = new Size(72, 30);
             numericUpDown19.TabIndex = 7;
             numericUpDown19.Visible = false;
+            numericUpDown19.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown20
             // 
+            numericUpDown20.DecimalPlaces = 1;
+            numericUpDown20.ImeMode = ImeMode.Off;
             numericUpDown20.Location = new Point(1182, 559);
             numericUpDown20.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown20.Name = "numericUpDown20";
             numericUpDown20.Size = new Size(72, 30);
             numericUpDown20.TabIndex = 7;
             numericUpDown20.Visible = false;
+            numericUpDown20.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // pictureBox30
             // 
@@ -1916,6 +2021,7 @@
             checkBox21.Text = "启用";
             checkBox21.UseVisualStyleBackColor = false;
             checkBox21.Visible = false;
+            checkBox21.CheckedChanged += checkBox_CheckedChanged;
             checkBox21.Paint += checkBox_Paint;
             // 
             // checkBox22
@@ -1930,6 +2036,7 @@
             checkBox22.Text = "启用";
             checkBox22.UseVisualStyleBackColor = false;
             checkBox22.Visible = false;
+            checkBox22.CheckedChanged += checkBox_CheckedChanged;
             checkBox22.Paint += checkBox_Paint;
             // 
             // checkBox23
@@ -1944,6 +2051,7 @@
             checkBox23.Text = "启用";
             checkBox23.UseVisualStyleBackColor = false;
             checkBox23.Visible = false;
+            checkBox23.CheckedChanged += checkBox_CheckedChanged;
             checkBox23.Paint += checkBox_Paint;
             // 
             // checkBox24
@@ -1958,43 +2066,56 @@
             checkBox24.Text = "启用";
             checkBox24.UseVisualStyleBackColor = false;
             checkBox24.Visible = false;
+            checkBox24.CheckedChanged += checkBox_CheckedChanged;
             checkBox24.Paint += checkBox_Paint;
             // 
             // numericUpDown21
             // 
+            numericUpDown21.DecimalPlaces = 1;
+            numericUpDown21.ImeMode = ImeMode.Off;
             numericUpDown21.Location = new Point(498, 675);
             numericUpDown21.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown21.Name = "numericUpDown21";
             numericUpDown21.Size = new Size(72, 30);
             numericUpDown21.TabIndex = 7;
             numericUpDown21.Visible = false;
+            numericUpDown21.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown22
             // 
+            numericUpDown22.DecimalPlaces = 1;
+            numericUpDown22.ImeMode = ImeMode.Off;
             numericUpDown22.Location = new Point(726, 675);
             numericUpDown22.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown22.Name = "numericUpDown22";
             numericUpDown22.Size = new Size(72, 30);
             numericUpDown22.TabIndex = 7;
             numericUpDown22.Visible = false;
+            numericUpDown22.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown23
             // 
+            numericUpDown23.DecimalPlaces = 1;
+            numericUpDown23.ImeMode = ImeMode.Off;
             numericUpDown23.Location = new Point(954, 675);
             numericUpDown23.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown23.Name = "numericUpDown23";
             numericUpDown23.Size = new Size(72, 30);
             numericUpDown23.TabIndex = 7;
             numericUpDown23.Visible = false;
+            numericUpDown23.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown24
             // 
+            numericUpDown24.DecimalPlaces = 1;
+            numericUpDown24.ImeMode = ImeMode.Off;
             numericUpDown24.Location = new Point(1182, 675);
             numericUpDown24.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown24.Name = "numericUpDown24";
             numericUpDown24.Size = new Size(72, 30);
             numericUpDown24.TabIndex = 7;
             numericUpDown24.Visible = false;
+            numericUpDown24.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // pictureBox34
             // 
@@ -2104,6 +2225,7 @@
             checkBox25.Text = "启用";
             checkBox25.UseVisualStyleBackColor = false;
             checkBox25.Visible = false;
+            checkBox25.CheckedChanged += checkBox_CheckedChanged;
             checkBox25.Paint += checkBox_Paint;
             // 
             // checkBox26
@@ -2118,6 +2240,7 @@
             checkBox26.Text = "启用";
             checkBox26.UseVisualStyleBackColor = false;
             checkBox26.Visible = false;
+            checkBox26.CheckedChanged += checkBox_CheckedChanged;
             checkBox26.Paint += checkBox_Paint;
             // 
             // checkBox27
@@ -2132,6 +2255,7 @@
             checkBox27.Text = "启用";
             checkBox27.UseVisualStyleBackColor = false;
             checkBox27.Visible = false;
+            checkBox27.CheckedChanged += checkBox_CheckedChanged;
             checkBox27.Paint += checkBox_Paint;
             // 
             // checkBox28
@@ -2146,43 +2270,56 @@
             checkBox28.Text = "启用";
             checkBox28.UseVisualStyleBackColor = false;
             checkBox28.Visible = false;
+            checkBox28.CheckedChanged += checkBox_CheckedChanged;
             checkBox28.Paint += checkBox_Paint;
             // 
             // numericUpDown25
             // 
+            numericUpDown25.DecimalPlaces = 1;
+            numericUpDown25.ImeMode = ImeMode.Off;
             numericUpDown25.Location = new Point(498, 791);
             numericUpDown25.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown25.Name = "numericUpDown25";
             numericUpDown25.Size = new Size(72, 30);
             numericUpDown25.TabIndex = 7;
             numericUpDown25.Visible = false;
+            numericUpDown25.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown26
             // 
+            numericUpDown26.DecimalPlaces = 1;
+            numericUpDown26.ImeMode = ImeMode.Off;
             numericUpDown26.Location = new Point(726, 791);
             numericUpDown26.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown26.Name = "numericUpDown26";
             numericUpDown26.Size = new Size(72, 30);
             numericUpDown26.TabIndex = 7;
             numericUpDown26.Visible = false;
+            numericUpDown26.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown27
             // 
+            numericUpDown27.DecimalPlaces = 1;
+            numericUpDown27.ImeMode = ImeMode.Off;
             numericUpDown27.Location = new Point(954, 791);
             numericUpDown27.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown27.Name = "numericUpDown27";
             numericUpDown27.Size = new Size(72, 30);
             numericUpDown27.TabIndex = 7;
             numericUpDown27.Visible = false;
+            numericUpDown27.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown28
             // 
+            numericUpDown28.DecimalPlaces = 1;
+            numericUpDown28.ImeMode = ImeMode.Off;
             numericUpDown28.Location = new Point(1182, 791);
             numericUpDown28.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown28.Name = "numericUpDown28";
             numericUpDown28.Size = new Size(72, 30);
             numericUpDown28.TabIndex = 7;
             numericUpDown28.Visible = false;
+            numericUpDown28.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // pictureBox38
             // 
@@ -2292,6 +2429,7 @@
             checkBox29.Text = "启用";
             checkBox29.UseVisualStyleBackColor = false;
             checkBox29.Visible = false;
+            checkBox29.CheckedChanged += checkBox_CheckedChanged;
             checkBox29.Paint += checkBox_Paint;
             // 
             // checkBox30
@@ -2306,6 +2444,7 @@
             checkBox30.Text = "启用";
             checkBox30.UseVisualStyleBackColor = false;
             checkBox30.Visible = false;
+            checkBox30.CheckedChanged += checkBox_CheckedChanged;
             checkBox30.Paint += checkBox_Paint;
             // 
             // checkBox31
@@ -2320,6 +2459,7 @@
             checkBox31.Text = "启用";
             checkBox31.UseVisualStyleBackColor = false;
             checkBox31.Visible = false;
+            checkBox31.CheckedChanged += checkBox_CheckedChanged;
             checkBox31.Paint += checkBox_Paint;
             // 
             // checkBox32
@@ -2334,48 +2474,61 @@
             checkBox32.Text = "启用";
             checkBox32.UseVisualStyleBackColor = false;
             checkBox32.Visible = false;
+            checkBox32.CheckedChanged += checkBox_CheckedChanged;
             checkBox32.Paint += checkBox_Paint;
             // 
             // numericUpDown29
             // 
+            numericUpDown29.DecimalPlaces = 1;
+            numericUpDown29.ImeMode = ImeMode.Off;
             numericUpDown29.Location = new Point(498, 907);
             numericUpDown29.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown29.Name = "numericUpDown29";
             numericUpDown29.Size = new Size(72, 30);
             numericUpDown29.TabIndex = 7;
             numericUpDown29.Visible = false;
+            numericUpDown29.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown30
             // 
+            numericUpDown30.DecimalPlaces = 1;
+            numericUpDown30.ImeMode = ImeMode.Off;
             numericUpDown30.Location = new Point(726, 907);
             numericUpDown30.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown30.Name = "numericUpDown30";
             numericUpDown30.Size = new Size(72, 30);
             numericUpDown30.TabIndex = 7;
             numericUpDown30.Visible = false;
+            numericUpDown30.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown31
             // 
+            numericUpDown31.DecimalPlaces = 1;
+            numericUpDown31.ImeMode = ImeMode.Off;
             numericUpDown31.Location = new Point(954, 907);
             numericUpDown31.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown31.Name = "numericUpDown31";
             numericUpDown31.Size = new Size(72, 30);
             numericUpDown31.TabIndex = 7;
             numericUpDown31.Visible = false;
+            numericUpDown31.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numericUpDown32
             // 
+            numericUpDown32.DecimalPlaces = 1;
+            numericUpDown32.ImeMode = ImeMode.Off;
             numericUpDown32.Location = new Point(1182, 907);
             numericUpDown32.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             numericUpDown32.Name = "numericUpDown32";
             numericUpDown32.Size = new Size(72, 30);
             numericUpDown32.TabIndex = 7;
             numericUpDown32.Visible = false;
+            numericUpDown32.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // button1
             // 
             button1.Font = new Font("Microsoft YaHei UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(69, 989);
+            button1.Location = new Point(72, 1117);
             button1.Name = "button1";
             button1.Size = new Size(212, 81);
             button1.TabIndex = 8;
@@ -2383,12 +2536,231 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // description
+            // 
+            description.BackColor = Color.Transparent;
+            description.ForeColor = SystemColors.ControlLightLight;
+            description.Location = new Point(342, 1081);
+            description.Name = "description";
+            description.Size = new Size(889, 140);
+            description.TabIndex = 9;
+            description.Text = "使用说明：勾选你需要的珍宝技能，设置它的优先级，然后点击“开始计算”按钮即可得出配装结果。\r\n属性强化有两个，因为单个满级4级，需要两个才能达到满级8级。\r\n致命一击、会心一击、攻速强化满级5级，因意义不大故未考虑两个会心一击的情况，可根据计算结果自行定夺。\r\n结果仅供参考。";
+            description.TextAlign = ContentAlignment.MiddleLeft;
+            description.UseMnemonic = false;
+            description.Paint += label41_Paint;
+            // 
+            // pictureBox42
+            // 
+            pictureBox42.BackgroundImage = Properties.Resources.宝库达人;
+            pictureBox42.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox42.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox42.Location = new Point(384, 969);
+            pictureBox42.Name = "pictureBox42";
+            pictureBox42.Size = new Size(94, 94);
+            pictureBox42.TabIndex = 4;
+            pictureBox42.TabStop = false;
+            pictureBox42.Visible = false;
+            // 
+            // pictureBox43
+            // 
+            pictureBox43.BackgroundImage = Properties.Resources.宝库达人;
+            pictureBox43.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox43.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox43.Location = new Point(612, 969);
+            pictureBox43.Name = "pictureBox43";
+            pictureBox43.Size = new Size(94, 94);
+            pictureBox43.TabIndex = 4;
+            pictureBox43.TabStop = false;
+            pictureBox43.Visible = false;
+            // 
+            // pictureBox44
+            // 
+            pictureBox44.BackgroundImage = Properties.Resources.宝库达人;
+            pictureBox44.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox44.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox44.Location = new Point(840, 969);
+            pictureBox44.Name = "pictureBox44";
+            pictureBox44.Size = new Size(94, 94);
+            pictureBox44.TabIndex = 4;
+            pictureBox44.TabStop = false;
+            pictureBox44.Visible = false;
+            // 
+            // pictureBox45
+            // 
+            pictureBox45.BackgroundImage = Properties.Resources.宝库达人;
+            pictureBox45.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox45.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox45.Location = new Point(1068, 969);
+            pictureBox45.Name = "pictureBox45";
+            pictureBox45.Size = new Size(94, 94);
+            pictureBox45.TabIndex = 4;
+            pictureBox45.TabStop = false;
+            pictureBox45.Visible = false;
+            // 
+            // label41
+            // 
+            label41.BackColor = Color.FromArgb(150, 0, 0, 0);
+            label41.ForeColor = SystemColors.ControlLightLight;
+            label41.Location = new Point(384, 1039);
+            label41.Name = "label41";
+            label41.Size = new Size(94, 24);
+            label41.TabIndex = 5;
+            label41.Text = "宝库达人";
+            label41.TextAlign = ContentAlignment.MiddleCenter;
+            label41.Visible = false;
+            // 
+            // label42
+            // 
+            label42.BackColor = Color.FromArgb(150, 0, 0, 0);
+            label42.ForeColor = SystemColors.ControlLightLight;
+            label42.Location = new Point(612, 1039);
+            label42.Name = "label42";
+            label42.Size = new Size(94, 24);
+            label42.TabIndex = 5;
+            label42.Text = "宝库达人";
+            label42.TextAlign = ContentAlignment.MiddleCenter;
+            label42.Visible = false;
+            // 
+            // label43
+            // 
+            label43.BackColor = Color.FromArgb(150, 0, 0, 0);
+            label43.ForeColor = SystemColors.ControlLightLight;
+            label43.Location = new Point(840, 1039);
+            label43.Name = "label43";
+            label43.Size = new Size(94, 24);
+            label43.TabIndex = 5;
+            label43.Text = "宝库达人";
+            label43.TextAlign = ContentAlignment.MiddleCenter;
+            label43.Visible = false;
+            // 
+            // label44
+            // 
+            label44.BackColor = Color.FromArgb(150, 0, 0, 0);
+            label44.ForeColor = SystemColors.ControlLightLight;
+            label44.Location = new Point(1068, 1039);
+            label44.Name = "label44";
+            label44.Size = new Size(94, 24);
+            label44.TabIndex = 5;
+            label44.Text = "宝库达人";
+            label44.TextAlign = ContentAlignment.MiddleCenter;
+            label44.Visible = false;
+            // 
+            // checkBox33
+            // 
+            checkBox33.AutoSize = true;
+            checkBox33.BackColor = Color.Transparent;
+            checkBox33.ForeColor = SystemColors.Control;
+            checkBox33.Location = new Point(498, 982);
+            checkBox33.Name = "checkBox33";
+            checkBox33.Size = new Size(72, 28);
+            checkBox33.TabIndex = 6;
+            checkBox33.Text = "启用";
+            checkBox33.UseVisualStyleBackColor = false;
+            checkBox33.Visible = false;
+            checkBox33.CheckedChanged += checkBox_CheckedChanged;
+            checkBox33.Paint += checkBox_Paint;
+            // 
+            // checkBox34
+            // 
+            checkBox34.AutoSize = true;
+            checkBox34.BackColor = Color.Transparent;
+            checkBox34.ForeColor = SystemColors.Control;
+            checkBox34.Location = new Point(726, 982);
+            checkBox34.Name = "checkBox34";
+            checkBox34.Size = new Size(72, 28);
+            checkBox34.TabIndex = 6;
+            checkBox34.Text = "启用";
+            checkBox34.UseVisualStyleBackColor = false;
+            checkBox34.Visible = false;
+            checkBox34.CheckedChanged += checkBox_CheckedChanged;
+            checkBox34.Paint += checkBox_Paint;
+            // 
+            // checkBox35
+            // 
+            checkBox35.AutoSize = true;
+            checkBox35.BackColor = Color.Transparent;
+            checkBox35.ForeColor = SystemColors.Control;
+            checkBox35.Location = new Point(954, 982);
+            checkBox35.Name = "checkBox35";
+            checkBox35.Size = new Size(72, 28);
+            checkBox35.TabIndex = 6;
+            checkBox35.Text = "启用";
+            checkBox35.UseVisualStyleBackColor = false;
+            checkBox35.Visible = false;
+            checkBox35.CheckedChanged += checkBox_CheckedChanged;
+            checkBox35.Paint += checkBox_Paint;
+            // 
+            // checkBox36
+            // 
+            checkBox36.AutoSize = true;
+            checkBox36.BackColor = Color.Transparent;
+            checkBox36.ForeColor = SystemColors.Control;
+            checkBox36.Location = new Point(1182, 982);
+            checkBox36.Name = "checkBox36";
+            checkBox36.Size = new Size(72, 28);
+            checkBox36.TabIndex = 6;
+            checkBox36.Text = "启用";
+            checkBox36.UseVisualStyleBackColor = false;
+            checkBox36.Visible = false;
+            checkBox36.CheckedChanged += checkBox_CheckedChanged;
+            checkBox36.Paint += checkBox_Paint;
+            // 
+            // numericUpDown33
+            // 
+            numericUpDown33.DecimalPlaces = 1;
+            numericUpDown33.ImeMode = ImeMode.Off;
+            numericUpDown33.Location = new Point(498, 1022);
+            numericUpDown33.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
+            numericUpDown33.Name = "numericUpDown33";
+            numericUpDown33.Size = new Size(72, 30);
+            numericUpDown33.TabIndex = 7;
+            numericUpDown33.Visible = false;
+            numericUpDown33.ValueChanged += numericUpDown1_ValueChanged;
+            // 
+            // numericUpDown34
+            // 
+            numericUpDown34.DecimalPlaces = 1;
+            numericUpDown34.ImeMode = ImeMode.Off;
+            numericUpDown34.Location = new Point(726, 1022);
+            numericUpDown34.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
+            numericUpDown34.Name = "numericUpDown34";
+            numericUpDown34.Size = new Size(72, 30);
+            numericUpDown34.TabIndex = 7;
+            numericUpDown34.Visible = false;
+            numericUpDown34.ValueChanged += numericUpDown1_ValueChanged;
+            // 
+            // numericUpDown35
+            // 
+            numericUpDown35.DecimalPlaces = 1;
+            numericUpDown35.ImeMode = ImeMode.Off;
+            numericUpDown35.Location = new Point(954, 1022);
+            numericUpDown35.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
+            numericUpDown35.Name = "numericUpDown35";
+            numericUpDown35.Size = new Size(72, 30);
+            numericUpDown35.TabIndex = 7;
+            numericUpDown35.Visible = false;
+            numericUpDown35.ValueChanged += numericUpDown1_ValueChanged;
+            // 
+            // numericUpDown36
+            // 
+            numericUpDown36.DecimalPlaces = 1;
+            numericUpDown36.ImeMode = ImeMode.Off;
+            numericUpDown36.Location = new Point(1182, 1022);
+            numericUpDown36.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
+            numericUpDown36.Name = "numericUpDown36";
+            numericUpDown36.Size = new Size(72, 30);
+            numericUpDown36.TabIndex = 7;
+            numericUpDown36.Visible = false;
+            numericUpDown36.ValueChanged += numericUpDown1_ValueChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1271, 1115);
+            ClientSize = new Size(1271, 1230);
+            Controls.Add(description);
             Controls.Add(button1);
+            Controls.Add(numericUpDown36);
             Controls.Add(numericUpDown32);
             Controls.Add(numericUpDown28);
             Controls.Add(numericUpDown24);
@@ -2397,6 +2769,7 @@
             Controls.Add(numericUpDown12);
             Controls.Add(numericUpDown8);
             Controls.Add(numericUpDown4);
+            Controls.Add(numericUpDown35);
             Controls.Add(numericUpDown31);
             Controls.Add(numericUpDown27);
             Controls.Add(numericUpDown23);
@@ -2405,6 +2778,7 @@
             Controls.Add(numericUpDown11);
             Controls.Add(numericUpDown7);
             Controls.Add(numericUpDown3);
+            Controls.Add(numericUpDown34);
             Controls.Add(numericUpDown30);
             Controls.Add(numericUpDown26);
             Controls.Add(numericUpDown22);
@@ -2413,6 +2787,7 @@
             Controls.Add(numericUpDown10);
             Controls.Add(numericUpDown6);
             Controls.Add(numericUpDown2);
+            Controls.Add(numericUpDown33);
             Controls.Add(numericUpDown29);
             Controls.Add(numericUpDown25);
             Controls.Add(numericUpDown21);
@@ -2421,6 +2796,7 @@
             Controls.Add(numericUpDown9);
             Controls.Add(numericUpDown5);
             Controls.Add(numericUpDown1);
+            Controls.Add(checkBox36);
             Controls.Add(checkBox32);
             Controls.Add(checkBox28);
             Controls.Add(checkBox24);
@@ -2429,6 +2805,7 @@
             Controls.Add(checkBox12);
             Controls.Add(checkBox8);
             Controls.Add(checkBox4);
+            Controls.Add(checkBox35);
             Controls.Add(checkBox31);
             Controls.Add(checkBox27);
             Controls.Add(checkBox23);
@@ -2437,6 +2814,7 @@
             Controls.Add(checkBox11);
             Controls.Add(checkBox7);
             Controls.Add(checkBox3);
+            Controls.Add(checkBox34);
             Controls.Add(checkBox30);
             Controls.Add(checkBox26);
             Controls.Add(checkBox22);
@@ -2445,6 +2823,7 @@
             Controls.Add(checkBox10);
             Controls.Add(checkBox6);
             Controls.Add(checkBox2);
+            Controls.Add(checkBox33);
             Controls.Add(checkBox29);
             Controls.Add(checkBox25);
             Controls.Add(checkBox21);
@@ -2465,6 +2844,7 @@
             Controls.Add(item_ability_text_7_1);
             Controls.Add(item_ability_text_4_1);
             Controls.Add(item_ability_text_5_1);
+            Controls.Add(label44);
             Controls.Add(label40);
             Controls.Add(label36);
             Controls.Add(label32);
@@ -2473,6 +2853,7 @@
             Controls.Add(label20);
             Controls.Add(label16);
             Controls.Add(label12);
+            Controls.Add(label43);
             Controls.Add(label39);
             Controls.Add(label35);
             Controls.Add(label31);
@@ -2481,6 +2862,7 @@
             Controls.Add(label19);
             Controls.Add(label15);
             Controls.Add(label11);
+            Controls.Add(label42);
             Controls.Add(label38);
             Controls.Add(label34);
             Controls.Add(label30);
@@ -2489,6 +2871,7 @@
             Controls.Add(label18);
             Controls.Add(label14);
             Controls.Add(label10);
+            Controls.Add(label41);
             Controls.Add(label37);
             Controls.Add(label33);
             Controls.Add(label29);
@@ -2516,6 +2899,7 @@
             Controls.Add(item_ability_2_2);
             Controls.Add(item_ability_2_1);
             Controls.Add(item_ability_1_2);
+            Controls.Add(pictureBox45);
             Controls.Add(pictureBox41);
             Controls.Add(pictureBox37);
             Controls.Add(pictureBox33);
@@ -2523,6 +2907,7 @@
             Controls.Add(pictureBox25);
             Controls.Add(pictureBox21);
             Controls.Add(pictureBox17);
+            Controls.Add(pictureBox44);
             Controls.Add(pictureBox13);
             Controls.Add(pictureBox40);
             Controls.Add(pictureBox36);
@@ -2531,7 +2916,9 @@
             Controls.Add(pictureBox24);
             Controls.Add(pictureBox20);
             Controls.Add(pictureBox16);
+            Controls.Add(pictureBox43);
             Controls.Add(pictureBox12);
+            Controls.Add(pictureBox42);
             Controls.Add(pictureBox39);
             Controls.Add(pictureBox38);
             Controls.Add(pictureBox35);
@@ -2662,6 +3049,14 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown30).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown31).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown32).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox42).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox43).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox44).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox45).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown33).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown34).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown35).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown36).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -2846,5 +3241,22 @@
         private NumericUpDown numericUpDown31;
         private NumericUpDown numericUpDown32;
         private Button button1;
+        private Label description;
+        private PictureBox pictureBox42;
+        private PictureBox pictureBox43;
+        private PictureBox pictureBox44;
+        private PictureBox pictureBox45;
+        private Label label41;
+        private Label label42;
+        private Label label43;
+        private Label label44;
+        private CheckBox checkBox33;
+        private CheckBox checkBox34;
+        private CheckBox checkBox35;
+        private CheckBox checkBox36;
+        private NumericUpDown numericUpDown33;
+        private NumericUpDown numericUpDown34;
+        private NumericUpDown numericUpDown35;
+        private NumericUpDown numericUpDown36;
     }
 }
