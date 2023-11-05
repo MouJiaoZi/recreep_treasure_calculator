@@ -1,4 +1,6 @@
+using Microsoft.Win32;
 using System.Collections;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -168,14 +170,16 @@ namespace recreep_treasure_calculator
             {
                 String t_name = treasure.name;
                 List<String> t_slots = treasure.slots;
-                foreach (var slot_name in t_slots)
+
+                foreach (var sorted_item_info in item_info.OrderBy(i => i.Value.Count))
                 {
-                    if (item_info[slot_name].Count < Items[slot_name].slots)
+                    //foreach (var slot_name in t_slots)
+                    if (t_slots.Contains(sorted_item_info.Key) && item_info[sorted_item_info.Key].Count < Items[sorted_item_info.Key].slots)
                     {
-                        item_info[slot_name].Add(t_name);
-                        Control[] icon = Controls.Find(item_icon_prefix + Items[slot_name].ui_id + '_' + item_info[slot_name].Count, true);
+                        item_info[sorted_item_info.Key].Add(t_name);
+                        Control[] icon = Controls.Find(item_icon_prefix + Items[sorted_item_info.Key].ui_id + '_' + item_info[sorted_item_info.Key].Count, true);
                         if (icon.Length > 0) { icon[0].BackgroundImage = treasure.icon; }
-                        Control[] text = Controls.Find(item_text_prefix + Items[slot_name].ui_id + '_' + item_info[slot_name].Count, true);
+                        Control[] text = Controls.Find(item_text_prefix + Items[sorted_item_info.Key].ui_id + '_' + item_info[sorted_item_info.Key].Count, true);
                         if (text.Length > 0) { text[0].Visible = true; text[0].Text = t_name; }
                         break;
                     }
@@ -202,6 +206,16 @@ namespace recreep_treasure_calculator
             int treasure_id = int.Parse(trigger.Name.Replace(num_prefix, "")) - 1;
             Console.WriteLine(String.Format("{0:s} -> {1:n}", Treasures[treasure_id].name, trigger.Value));
             Treasures[treasure_id].default_priority = Convert.ToInt32(trigger.Value);
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo { UseShellExecute = true, FileName = "https://github.com/MouJiaoZi/recreep_treasure_calculator" });
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo { UseShellExecute = true, FileName = "https://www.moujiaozi.tech/" });
         }
     }
 }

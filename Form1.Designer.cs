@@ -224,6 +224,12 @@
             numericUpDown34 = new NumericUpDown();
             numericUpDown35 = new NumericUpDown();
             numericUpDown36 = new NumericUpDown();
+            panel1 = new Panel();
+            github = new Label();
+            pictureBox46 = new PictureBox();
+            panel2 = new Panel();
+            label45 = new Label();
+            pictureBox47 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -321,6 +327,10 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown34).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown35).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown36).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox46).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox47).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -2528,7 +2538,7 @@
             // button1
             // 
             button1.Font = new Font("Microsoft YaHei UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(72, 1117);
+            button1.Location = new Point(55, 982);
             button1.Name = "button1";
             button1.Size = new Size(212, 81);
             button1.TabIndex = 8;
@@ -2540,9 +2550,9 @@
             // 
             description.BackColor = Color.Transparent;
             description.ForeColor = SystemColors.ControlLightLight;
-            description.Location = new Point(342, 1081);
+            description.Location = new Point(384, 1081);
             description.Name = "description";
-            description.Size = new Size(889, 140);
+            description.Size = new Size(847, 140);
             description.TabIndex = 9;
             description.Text = "使用说明：勾选你需要的珍宝技能，设置它的优先级，然后点击“开始计算”按钮即可得出配装结果。\r\n属性强化有两个，因为单个满级4级，需要两个才能达到满级8级。\r\n致命一击、会心一击、攻速强化满级5级，因意义不大故未考虑两个会心一击的情况，可根据计算结果自行定夺。\r\n结果仅供参考。";
             description.TextAlign = ContentAlignment.MiddleLeft;
@@ -2753,11 +2763,75 @@
             numericUpDown36.Visible = false;
             numericUpDown36.ValueChanged += numericUpDown1_ValueChanged;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(github);
+            panel1.Controls.Add(pictureBox46);
+            panel1.Location = new Point(69, 1090);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(130, 38);
+            panel1.TabIndex = 10;
+            panel1.Click += panel1_Click;
+            // 
+            // github
+            // 
+            github.AutoSize = true;
+            github.Location = new Point(43, 7);
+            github.Name = "github";
+            github.Size = new Size(72, 24);
+            github.TabIndex = 1;
+            github.Text = "GitHub";
+            github.Click += panel1_Click;
+            // 
+            // pictureBox46
+            // 
+            pictureBox46.BackgroundImage = (Image)resources.GetObject("pictureBox46.BackgroundImage");
+            pictureBox46.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox46.Location = new Point(5, 3);
+            pictureBox46.Name = "pictureBox46";
+            pictureBox46.Size = new Size(30, 32);
+            pictureBox46.TabIndex = 0;
+            pictureBox46.TabStop = false;
+            pictureBox46.Click += panel1_Click;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(label45);
+            panel2.Controls.Add(pictureBox47);
+            panel2.Location = new Point(69, 1148);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(130, 38);
+            panel2.TabIndex = 10;
+            panel2.Click += panel2_Click;
+            // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.Location = new Point(43, 7);
+            label45.Name = "label45";
+            label45.Size = new Size(82, 24);
+            label45.TabIndex = 1;
+            label45.Text = "WebSite";
+            label45.Click += panel2_Click;
+            // 
+            // pictureBox47
+            // 
+            pictureBox47.BackgroundImage = (Image)resources.GetObject("pictureBox47.BackgroundImage");
+            pictureBox47.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox47.Location = new Point(5, 3);
+            pictureBox47.Name = "pictureBox47";
+            pictureBox47.Size = new Size(30, 32);
+            pictureBox47.TabIndex = 0;
+            pictureBox47.TabStop = false;
+            pictureBox47.Click += panel2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1271, 1230);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(description);
             Controls.Add(button1);
             Controls.Add(numericUpDown36);
@@ -2959,7 +3033,7 @@
             Name = "Form1";
             SizeGripStyle = SizeGripStyle.Show;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "小兵珍宝计算器 by某餃子 www.moujiaozi.tech";
+            Text = "小兵珍宝计算器 by某餃子";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -3057,6 +3131,12 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown34).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown35).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown36).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox46).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox47).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -3258,5 +3338,11 @@
         private NumericUpDown numericUpDown34;
         private NumericUpDown numericUpDown35;
         private NumericUpDown numericUpDown36;
+        private Panel panel1;
+        private PictureBox pictureBox46;
+        private Label github;
+        private Panel panel2;
+        private Label label45;
+        private PictureBox pictureBox47;
     }
 }
